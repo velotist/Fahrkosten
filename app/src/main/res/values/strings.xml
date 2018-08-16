@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Fahrkosten</string>
+    <string name="kosten_proTag">Kosten pro Tag</string>
+    <string name="null_kostenProTag" />
+    <string name="gefahrene_km">einfache Fahrt</string>
+    <string name="null_gefahreneKm" />
+    <string name="preis_proLiter">Preis pro Liter</string>
+    <string name="null_preisProLiter" />
+    <string name="ver_brauch">Verbrauch</string>
+    <string name="null_verbrauch" />
+    <string name="button_berechne">Berechne</string>
+    <string name="anzeige_textKosten">Kosten einfache Fahrt</string>
+    <string name="anzeige_textKostenHinUndZurueck">Kosten hin und zurück</string>
+    <string name="anzeige_kosten">0.00</string>
+    <string name="anzeige_kostenHinUndZurueck">0.00</string>
+    <string name="anzeige_euroEinfacheFahrt">km</string>
+    <string name="anzeige_euro">€</string>
+    <string name="anzeige_euroVerbrauch">l/100 km</string>
+    <string name="image_beschreibung">S+Pi=Aspie</string>
+</resources>

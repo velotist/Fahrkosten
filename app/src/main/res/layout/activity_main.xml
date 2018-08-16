@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.marcus.fahrkosten.MainActivity">
+
+    <TextView
+        android:id="@+id/textKostenProTagID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/kosten_proTag"
+        app:layout_constraintBaseline_toBaselineOf="@+id/eingabeKostenProTagID"
+        app:layout_constraintEnd_toStartOf="@+id/eingabeKostenProTagID"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/eingabeKostenProTagID"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:text="@string/null_kostenProTag"
+        app:layout_constraintEnd_toStartOf="@+id/labelEuroKostenProTagID"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/textEinfacheFahrtID"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/gefahrene_km"
+        app:layout_constraintBaseline_toBaselineOf="@+id/eingabeEinfacheFahrtID"
+        app:layout_constraintEnd_toStartOf="@+id/eingabeEinfacheFahrtID"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/eingabeEinfacheFahrtID"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:text="@string/null_gefahreneKm"
+        app:layout_constraintEnd_toStartOf="@+id/labelKmID"
+        app:layout_constraintTop_toBottomOf="@+id/eingabeKostenProTagID"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/textPreisProLiterID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/preis_proLiter"
+        app:layout_constraintBaseline_toBaselineOf="@+id/eingabePreisProLiterID"
+        app:layout_constraintEnd_toStartOf="@+id/eingabePreisProLiterID"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <EditText
+        android:id="@+id/eingabePreisProLiterID"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:text="@string/null_preisProLiter"
+        app:layout_constraintEnd_toStartOf="@+id/labelEuroPreisProLiterID"
+        app:layout_constraintTop_toBottomOf="@+id/eingabeEinfacheFahrtID" />
+
+    <TextView
+        android:id="@+id/textVerbrauchID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/ver_brauch"
+        app:layout_constraintBaseline_toBaselineOf="@+id/eingabeVerbrauchID"
+        app:layout_constraintEnd_toStartOf="@+id/eingabeVerbrauchID"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <EditText
+        android:id="@+id/eingabeVerbrauchID"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:text="@string/null_verbrauch"
+        app:layout_constraintEnd_toStartOf="@+id/labelLiterProHundertKmID"
+        app:layout_constraintTop_toBottomOf="@+id/eingabePreisProLiterID" />
+
+    <Button
+        android:id="@+id/buttonBerechneID"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/button_berechne"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eingabeVerbrauchID" />
+
+    <TextView
+        android:id="@+id/textKostenEinfacheFahrtID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/anzeige_textKosten"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bildSpID" />
+
+    <TextView
+        android:id="@+id/textKostenHindUndZurueckID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/anzeige_textKostenHinUndZurueck"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textKostenEinfacheFahrtID"
+        app:layout_constraintVertical_bias="0.153" />
+
+    <TextView
+        android:id="@+id/ausgabeKostenEinfacheFahrtID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:text="@string/anzeige_kosten"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textKostenEinfacheFahrtID"
+        app:layout_constraintStart_toEndOf="@+id/textKostenEinfacheFahrtID" />
+
+    <ImageView
+        android:id="@+id/bildSpID"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:contentDescription="@string/image_beschreibung"
+        app:layout_constraintEnd_toStartOf="@+id/buttonBerechneID"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eingabeVerbrauchID"
+        app:srcCompat="@drawable/logola" />
+
+    <TextView
+        android:id="@+id/labelEuroKostenEinfacheID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/anzeige_euro"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ausgabeKostenEinfacheFahrtID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ausgabeKostenEinfacheFahrtID" />
+
+    <TextView
+        android:id="@+id/ausgabeKostenHinUndZurueckID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:text="@string/anzeige_kostenHinUndZurueck"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textKostenHindUndZurueckID"
+        app:layout_constraintStart_toEndOf="@+id/textKostenHindUndZurueckID" />
+
+    <TextView
+        android:id="@+id/labelEuroKostenHinUndZurueckID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/anzeige_euro"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ausgabeKostenHinUndZurueckID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ausgabeKostenHinUndZurueckID" />
+
+    <TextView
+        android:id="@+id/labelEuroKostenProTagID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:text="@string/anzeige_euro"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/eingabeKostenProTagID"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/labelKmID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/anzeige_euroEinfacheFahrt"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/eingabeEinfacheFahrtID"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/labelEuroPreisProLiterID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:text="@string/anzeige_euro"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/eingabePreisProLiterID"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/labelLiterProHundertKmID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/anzeige_euroVerbrauch"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/eingabeVerbrauchID"
+        app:layout_constraintEnd_toEndOf="parent" />
+</android.support.constraint.ConstraintLayout>
